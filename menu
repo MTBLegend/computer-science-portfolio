@@ -4,8 +4,8 @@
         <div><title>Intro Page</title></div>
         <style>
             body{
-                background-image:url("https://www.zapp.com/uploads/pics/HD-Hairline-Dull_01.jpg");
-                background-size:100%;
+                background-image:url("http://i.imgur.com/GWUyCqu.gif");
+                background-size:5%;
                 
             }
             h1{
@@ -18,12 +18,13 @@
                 background-size:100%;
                 border:5px ridge rgb(255, 140, 0);
                 margin-top:2px;
-                margin-bottom:1px;
-                position: relative;
-                top: -5;
+                vertical-align:top;
+                
+                
+                
             }
             h2{ 
-                color:black;
+                color:red;
                 font-family: 'Caesar Dressing', cursive;
                 font-size:2000%;
                 text-align:center;
@@ -31,13 +32,6 @@
                 margin-bottom:1px;
                 
             }
-            h4{ 
-                color:black;
-                font-family: 'Caesar Dressing', cursive;
-                font-size:1200%;
-                text-align:center;
-                margin-top:1px;
-                margin-bottom:1px;
             h6{
                 color:gray; 
                 font-family: 'Akronim', cursive;
@@ -72,48 +66,45 @@
                 
             }
             #menu1{
-                border:5px ridge rgb(255, 140, 0);
-                background-image:url(http://webdesignandsuch.com/posts/stainless/1.jpg);
+                border:10px ridge rgb(255, 140, 0);
+                background-image:url(http://www.pageresource.com/wallpapers/wallpaper/dark-simple-fresh-new.jpg);
                 text-align:center;
-                font-size:30px;
+                font-size:45px;
                 margin-top:1px;
                 margin-bottom:1px;
-                margin-left:5px;
-                margin-right:5px;
-                padding-left:5px;
-                padding-right:5px;
-
             }
-            .intro {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+            #menu2{
+                border:10px ridge rgb(255, 140, 0);
+                background-image:url(http://www.pageresource.com/wallpapers/wallpaper/dark-simple-fresh-new.jpg);
                 text-align:center;
+                font-size:45px;
+                margin-top:1px;
+                margin-bottom:1px;
             }
-            
-            .list {
-                display: inline;
-                padding: 30px 30px 30px 30px;
+            #menu3{
+                border:10px ridge rgb(255, 140, 0);
+                background-image:url(http://www.pageresource.com/wallpapers/wallpaper/dark-simple-fresh-new.jpg);
                 text-align:center;
+                font-size:45px;
+                margin-top:1px;
+                margin-bottom:1px;
+            }
+            #menu4{
+                border:10px ridge rgb(255, 140, 0);
+                background-image:url(http://www.pageresource.com/wallpapers/wallpaper/dark-simple-fresh-new.jpg);
+                text-align:center;
+                font-size:45px;
+                margin-top:1px;
+                margin-bottom:1px;
             }
         </style>
        <link href='https://fonts.googleapis.com/css?family=Rock+Salt|Damion|Audiowide|Caesar+Dressing|Akronim' rel='stylesheet' type='text/css'>
         </head>
     <body>
     <h1>Keith Hatfield's Website</h1>
-    <h2>WELCOME</h2>
-        
-        <ul class="intro">
-        <li class="list"><a href="index.html">Welcome</a></li>  
-        <li class="list"><a href="aboutme.html">All About Me</a></li>
-        <li class="list"><a href="Hardware.html">Hardware</a></li>   
-        <li class="list"><a href="htmlcss.html">HTML & CSS</a></li>
-    </ul>
      
-     <h6><ul>
-            <li>I am in Mr. Hesbey's Intro to computor science class. This class heps us learn how to code and make websites. I like this class because i can make fun websited if i wanted to.</li>
-        <li>People can also find how to code and see about me and learn about html and css.</li>
-        </ul></h6>
-        </h6>
-    </body>
-</html>
+        <h4 id="menu1"><a href="index.html">Welcome </a></h4>
+        <h4 id="menu2"><a href="aboutme.html">All About Me </a></h4>
+        <h4 id="menu3"><a href="Hardware.html">Hardware </a></li></h4>
+        <h4 id="menu4"><a href="htmlcss.html">HTML & CSS </a></li></h4>
+    </ul>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       input[type=text]{
+            background-color: white;
+            border:ridge 5px black;
+            color: black;
+            height: 30px;
+            padding-left:10px;
+            width: 191px;
+            box-shadow: 5px 5px 0 red inset;
+       }
+       input[type=button]{
+            background-color: white;
+            border:ridge 5px black;
+            color: Black;
+            height: 42px;
+            padding-left:1px;
+            width: 75px;
+            box-shadow: -5px -5px 0 red inset;
+}
+p{
+    border:;
+}
+    </style>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Document</title>
+</head>
+<body>
+    
+<input type ="text" name="input1" style="width:50px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+        <option value="^">^</option>
+        <option value="sqrt">&radic;</option>
+    </select>
+    <input type ="text" name="input2" style="width:50px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" />
+
+    <p>The answer is: <span id="display"></span></p>
+<script src="calc.js" ></script>
+
+</body>
+</html>

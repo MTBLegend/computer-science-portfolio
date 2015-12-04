@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>To Do List</title>
+
+<style>
+   body{
+     background-image:url(https://s-media-cache-ak0.pinimg.com/originals/3f/f7/67/3ff767139fbcf8f060103043633a5579.gif);
+     background-size:100%;
+     
+   }
+   #textbox{
+            color:red;
+            font-family: 'Rock Salt', cursive;
+            font-size:10;
+            text-align:center;
+            padding-top:2px;
+            background-size:100%;
+            margin-top:2px;
+            margin-bottom:0px;
+            padding-bottom:12px;
+            position: relative;
+            top: -5;
+   }
+   .list{
+     
+   }
+   #additem{
+       color:purple;
+       margin-left:15%;
+   }
+   h1{
+     text-align:center;
+     font-size:530%;
+     margin-bottom:12px;
+     margin-top:10px;
+   }
+   h2{
+     margin-top:1px;
+     text-align:center;
+     margin-bottom:56px;
+   }
+   #todolist{
+     font-size:36.5px;
+     margin-left:13%;
+     margin-top:-.9px;
+     margin-bottom:0px;
+   }
+   
+   
+</style>
+
+
+
+
+</head>
+<body>
+  <header><h1>To Do List</h1></header>
+  <h2>Type In Text Box To Add Text. Select Item To Remove.
+  </break></h2>
+  <section>
+    
+    <form id="myform">
+      <div>
+        
+        <div id=textbox>
+        <input type="text" id="newitem" />
+        <input type="submit" />
+        <input type="Button" value="Remove All" id="removeAll"/>        
+        </div><div id=additem></div>
+        <div id="todolist"></div>
+    </div>
+    </form>
+
+  </section>
+  <footer>
+  </footer>
+    
+    
+<script src="todolist.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div><title>Bicycle parts</title></div>
+        <style>
+            body{
+                background-image:url("http://www.santacruzbicycles.com/files/syndicateprfooter_0.png?1453150460");
+                background-size:100%;
+                }
+            h1{
+                color:black;
+                font-family: 'Rock Salt', cursive;
+                font-size:525%;
+                text-align:center;
+                padding-top:0px;
+                padding-bottom:10px;
+                background-color:grey;
+                background-size:100%;
+                border:5px ridge rgb(70, 70, 70);
+                margin-top:10px;
+                margin-bottom:0px;
+                position: relative;
+                top: -5;
+            }
+            #v10{
+                color:black;
+                font-family: 'Rock Salt', cursive;
+                font-size:525%;
+                text-align:center;
+                padding-top:10px;
+                padding-bottom:550px;
+                background-image:url("http://p.vitalmtb.com/photos/products/15617/photos/17447/s1600_2015_Santa_Cruz_V10_Carbon_CC_X01_black_white_with_RockShox_rear_shock.jpg?1421124843");
+                background-size:100%;
+                border:5px ridge rgb(70, 70, 70);
+                margin-top:10px;
+                margin-bottom:0px;
+                margin-left:200px;
+                margin-right:200px;
+                position: relative;
+                top: -5;
+            }
+            #nomad{
+                color:black;
+                font-family: 'Rock Salt', cursive;
+                font-size:525%;
+                text-align:center;
+                padding-top:10px;
+                padding-bottom:550px;
+                background-image:url("http://greatdividecyclery.com/images/library/zoom/santa-cruz-nomad-cc-230899-11.jpg");
+                background-size:100%;
+                border:5px ridge rgb(70, 70, 70);
+                margin-top:10px;
+                margin-bottom:0px;
+                margin-left:200px;
+                margin-right:200px;
+                position: relative;
+                top: -5;
+                display:none;
+             }
+            #jackall{
+                color:black;
+                font-family: 'Rock Salt', cursive;
+                font-size:525%;
+                text-align:center;
+                padding-top:10px;
+                padding-bottom:550px;
+                background-image:url("http://images.evanscycles.com/product_image/image/ca5/735/cf9/77246/santa-cruz-jackal-2012-mountain-bike.jpg");
+                background-size:100%;
+                border:5px ridge rgb(70, 70, 70);
+                margin-top:10px;
+                margin-bottom:0px;
+                margin-left:200px;
+                margin-right:200px;
+                position: relative;
+                top: -5;
+                display:none;
+            
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            #frontwheel{
+                position:absolute;
+                width: 335px;
+                height: 335px;
+                top: 210px;
+                left: 580px;
+                border-radius:50%;
+            }
+             #frontbrake{
+                position:absolute;
+                width: 90px;
+                height: 90px;
+                top: 336px;
+                left: 705px;
+                border-radius:50%;
+            }
+            #backwheel{
+                position:absolute;
+                width: 335px;
+                height: 335px;
+                top: 210px;
+                left: 0px;
+                border-radius:50%;
+            }
+            #rearbrake{
+                position:absolute;
+                width: 90px;
+                height: 90px;
+                top: 336px;
+                left: 130px;
+                border-radius:50%;
+            }
+            #rearderailleur1{
+                position:absolute;
+                width: 55px;
+                height: 25px;
+                top: 400px;
+                left: 142px;
+                color:red;
+                transform: rotate(-170deg);
+            }
+            #rearderailleur2{
+                position:absolute;
+                width: 55px;
+                height: 25px;
+                top: 425px;
+                left: 160px;
+                color:red;
+                transform: rotate(80deg);
+            }
+            #chain1{
+                position:absolute;
+                width: 140px;
+                height: 5px;
+                top: 428px;
+                left: 200px;
+                color:red;
+                transform: rotate(-22deg);
+            }
+            #chain2{
+                position:absolute;
+                width: 140px;
+                height: 5px;
+                top: 355px;
+                left: 200px;
+                color:red;
+                transform: rotate(-5deg);
+            }
+            #fork{
+                position:absolute;
+                width: 20px;
+                height: 380px;
+                top: 50px;
+                left: 648.5px;
+                color:red;
+                transform: rotate(153deg);
+            }
+            #seatpost{
+                position:absolute;
+                width: 15px;
+                height: 50px;
+                top: 120px;
+                left: 305px;
+                color:red;
+                transform: rotate(147deg);
+            }
+            #saddle{
+                position:absolute;
+                width: 135px;
+                height: 40px;
+                top: 80px;
+                left: 230px;
+                color:red;
+            }
+            #crank{
+                position:absolute;
+                width: 120px;
+                height: 75px;
+                top: 340px;
+                left: 345px;
+                color:red;
+            }
+            #rearshock{
+                position:absolute;
+                width: 100px;
+                height: 45px;
+                top: 278px;
+                left: 345px;
+                color:red;
+                transform: rotate(143deg);
+            }
+            #textbox{
+                position:absolute;
+                width: 200px;
+                height: 45px;
+                top: 30px;
+                left: 10px;
+                color:Black;
+                border:5px ridge rgb(70,70,70);
+                font-size:30px;
+            }
+            #handlebars{
+                position:absolute;
+                width: 70px;
+                height: 55px;
+                top: 15px;
+                left: 540px;
+                color:red;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            #frame1{
+                position:absolute;
+                width: 18px;
+                height: 56px;
+                top: 173.5px;
+                left: 341px;
+                color:red;
+                transform: rotate(147deg);
+            }
+             #frame2{
+                position:absolute;
+                width: 110px;
+                height: 23px;
+                top: 210px;
+                left: 360px;
+                color:red;
+            }
+            #frame3{
+                position:absolute;
+                width: 200px;
+                height: 20px;
+                top: 160px;
+                left: 405px;
+                color:red;
+                transform: rotate(-39deg);
+            }
+            #frame4{
+                position:absolute;
+                width: 290px;
+                height: 22px;
+                top: 235px;
+                left: 360px;
+                color:red;
+                transform: rotate(-55deg);
+            }
+            #frame5{
+                position:absolute;
+                width: 27px;
+                height: 100px;
+                top: 210px;
+                left: 447px;
+                color:red;
+                transform: rotate(-5deg);
+            }
+            #frame6{
+                position:absolute;
+                width: 25px;
+                height: 26px;
+                top: 220px;
+                left: 430px;
+                color:red;
+                transform: rotate(-50deg);
+            }
+            #frame7{
+                position:absolute;
+                width: 43px;
+                height: 30px;
+                top: 125px;
+                left: 555px;
+                color:red;
+                transform: rotate(-27deg);
+            }
+            #reartriangle1{
+                position:absolute;
+                width: 230px;
+                height: 15px;
+                top: 319px;
+                left: 160px;
+                color:red;
+                transform: rotate(-24deg);
+            }
+            #reartriangle2{
+                position:absolute;
+                width: 180px;
+                height: 23px;
+                top: 367px;
+                left: 160px;
+                color:red;
+                transform: rotate(1deg);
+            }
+            #reartriangle3{
+                position:absolute;
+                width: 85px;
+                height: 15px;
+                top: 340px;
+                left: 300px;
+                color:red;
+                transform: rotate(96deg);
+            }
+            #reartriangle4{
+                position:absolute;
+                width: 35px;
+                height: 15px;
+                top: 295px;
+                left: 330px;
+                color:red;
+                transform: rotate(135deg);
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            #frontwheel1{
+                position:absolute;
+                width: 325px;
+                height: 315px;
+                top: 205px;
+                left: 575px;
+                color:red;
+                border-radius:50%;
+            }
+            #backwheel1{
+                position:absolute;
+                width: 325px;
+                height: 315px;
+                top: 205px;
+                left: 20px;
+                color:red;
+                border-radius:50%;
+            }
+            #saddle1{
+                position:absolute;
+                width: 135px;
+                height: 40px;
+                top: 35px;
+                left: 230px;
+                color:red;
+            }
+            #crank1{
+                position:absolute;
+                width: 120px;
+                height: 60px;
+                top: 340px;
+                left: 350px;
+                color:red;
+            }
+            #rearshock1{
+                position:absolute;
+                width: 90px;
+                height: 40px;
+                top: 202px;
+                left: 395px;
+                color:red;
+                transform: rotate(150deg);
+            }
+            #textbox1{
+                position:absolute;
+                width: 200px;
+                height: 45px;
+                top: 30px;
+                left: 10px;
+                color:Black;
+                border:5px ridge rgb(70,70,70);
+                font-size:30px;
+            }
+            #handlebars1{
+                position:absolute;
+                width: 60px;
+                height: 55px;
+                top: 20px;
+                left: 565px;
+                color:red;
+            }
+            
+            
+            
+            
+            
+            
+            
+            #frontwheel2{
+                position:absolute;
+                width: 335px;
+                height: 335px;
+                top: 210px;
+                left: 570px;
+                color:red;
+                border-radius:50%;
+            }
+            #backwheel2{
+                position:absolute;
+                width: 335px;
+                height: 335px;
+                top: 210px;
+                left: 28px;
+                color:red;
+                border-radius:50%;
+            }
+            #saddle2{
+                position:absolute;
+                width: 127px;
+                height: 50px;
+                top: 150px;
+                left: 270px;
+                color:red;
+            }
+            #crank2{
+                position:absolute;
+                width: 80px;
+                height: 135px;
+                top: 345px;
+                left: 355px;
+                color:red;
+            }
+            #textbox2{
+                position:absolute;
+                width: 200px;
+                height: 45px;
+                top: 30px;
+                left: 10px;
+                color:Black;
+                border:5px ridge rgb(70,70,70);
+                font-size:30px;
+            }
+            #handlebars2{
+                position:absolute;
+                width: 65px;
+                height: 55px;
+                top: 40px;
+                left: 575px;
+                color:red;
+            }
+            
+            
+            
+            
+            
+            
+            #part{
+                position:absolute;
+                font-size:20px;
+                top: 191px;
+                left: 231px;
+                color:black;
+                font-style:bold;
+            }
+        </style>
+        </head>
+    <body>
+    <h1>
+        Bike Parts
+    </h1>
+    <select id="dropdown">
+        <option value="V10">V10</option>
+        <option value="Nomad">Nomad</option>
+        <option value="Jackall">Jackall</option>
+    </select>
+    <div id=v10>
+        <div id="frontwheel"></div>
+        <div id="frontbrake"></div>
+        <div id="backwheel"></div>
+        <div id="rearbrake"></div>
+        <div id="crank"></div>
+        <div id="saddle"></div>
+        <div id="rearshock"></div>
+        <div id="handlebars"></div>
+        <div id="textbox"></div>
+        <div id="fork"></div>
+        <div id="seatpost"></div>
+        <div id="rearderailleur1"></div>
+        <div id="rearderailleur2"></div>
+        <div id="chain1"></div>
+        <div id="chain2"></div>
+        <div class="frame" id="frame1"></div>
+        <div class="frame" id="frame2"></div>
+        <div class="frame" id="frame3"></div>
+        <div class="frame" id="frame4"></div>
+        <div class="frame" id="frame5"></div>
+        <div class="frame" id="frame6"></div>
+        <div class="frame" id="frame7"></div>
+        <div class="reartriangle" id="reartriangle1"></div>
+        <div class="reartriangle" id="reartriangle2"></div>
+        <div class="reartriangle" id="reartriangle3"></div>
+        <div class="reartriangle" id="reartriangle4"></div>
+
+        
+    </div>
+    <div id="nomad">
+        <div id="frontwheel1"></div>
+        <div id="backwheel1"></div>
+        <div id="crank1"></div>
+        <div id="saddle1"></div>
+        <div id="rearshock1"></div>
+        <div id="handlebars1"></div>
+        <div id="textbox1"></div>
+    </div>
+    <div id="jackall">
+        <div id="frontwheel2"></div>
+        <div id="backwheel2"></div>
+        <div id="crank2"></div>
+        <div id="saddle2"></div>
+        <div id="handlebars2"></div>
+        <div id="textbox2"></div>
+          
+    </div>
+    <div id="part">The Mouse Is Over The:</div>
+      <script type="text/javascript" src="bike.js"></script>
+    </body>
+</html>

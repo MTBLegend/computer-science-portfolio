@@ -4,15 +4,15 @@
         <div><title>Hardware</title></div>
         <style>
             body{
-                background-image:url("http://www.wallpaperh.com/wp-content/uploads/2015/04/techy-backgrounds.jpg");
+                background-image:url("http://img0.cfstatic.com/wallpapers/16ff967e5ad24d41ab2b977a46a49b02_large.jpeg");
             }
             h1{
-                color:green;
+                color:gray;
                 font-family: 'Rock Salt', cursive;
                 font-size:525%;
                 text-align:center;
                 padding-top:2px;
-                background-color:black;
+                background-image:url(http://www.pageresource.com/wallpapers/wallpaper/dark-simple-fresh-new.jpg);
                 background-size:100%;
                 border:5px ridge rgb(255, 140, 0);
                 margin-top:2px;
@@ -21,18 +21,17 @@
                 top: -5;
             }
             h2{ 
-                color:black;
+                color:gray;
                 font-family: 'Akronim', cursive;
                 margin-top:9px;
                 padding-top:19px;
-                font-size:47px;
+                font-size:80px;
                 text-align:center;
                 border:5px ridge black;
-                background-size:50%;
-                background-image:url("http://il4.picdn.net/shutterstock/videos/2695007/thumb/1.jpg")
+                background-image:url("http://www.dalbypicnicraces.org.au/images/background.jpg")
             }
             h4{ 
-                color:black;
+                color:gray;
                 font-family: 'Caesar Dressing', cursive;
                 font-size:1200%;
                 text-align:center;
@@ -76,19 +75,6 @@
                 padding: 30px 30px 30px 30px;
                 text-align:center;
             }
-            pre{
-                color:black;
-                padding-top:25px;
-                padding-left:5px;
-                font-size:100%;
-                background-color:white;
-                background-size:100%;
-                border:5px ridge green;
-                margin-top:2px;
-                margin-bottom:2px;
-                position: relative;
-                top: -5;
-            }
         </style>
         </head>
         <link href='https://fonts.googleapis.com/css?family=Rock+Salt|Damion|Audiowide|Caesar+Dressing|Akronim' rel='stylesheet' type='text/css'>
@@ -105,189 +91,30 @@
     </ul>
      
         
-        <h4>VINDINIUM</h4>
+        <h4>HARDWARE</h4>
         
-        <h2>MY Code</h2>
-        <code><pre>
-var Bot = require('bot');
-var PF = require('pathfinding');
-var bot = new Bot('isaflv4m', 'arena', 'http://vind.alexb.io'); //Put your bot's code here and change training to Arena when you want to fight others.
-//var bot = new Bot('p6m4pirh', 'arena', 'http://52.53.211.7:9000'); //Put your bot's code here and change training to Arena when you want to fight others.
-var goDir;
-var Promise = require('bluebird');
-
-
-
-Bot.prototype.botBrain = function() {
-    return new Promise(function(resolve, reject) {
-        _this = bot;
-        //////* Write your bot below Here *//////
-        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
-
-        /*                                      *
-         * This Code is global data!            *
-         *                                      */
-
-        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
-        var myDir;
-        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+        <h2>Motherbord</h2>
+        <div><img src="http://images.anandtech.com/doci/7548/ASUS%20CVFZ.jpg" width="45%"></div>
+        <h6>The motherboard is a printed circuit board that is the foundation of a computer, located at the bottom of the computer case. It allocates power to the CPU, RAM, and all other computer hardware components. Most importantly, the motherboard allows hardware components to communicate with one another.</h6>
         
-        //code to allow bot to know who are enemy bots
-        var enemyBots = [];
-        if(bot.yourBot.id != 1) enemyBots.push(bot.bot1);
-        if(bot.yourBot.id != 2) enemyBots.push(bot.bot2);
-        if(bot.yourBot.id != 3) enemyBots.push(bot.bot3);
-        if(bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+        <h2>CPU</h2>
+        <div><img src="http://cdn2.macworld.co.uk/cmsdata/features/3489917/XeonE5-2600-CK_FB.jpg" width="45%"></div>
+        <h6>The CPU is the brains of the computer where most calculations take place</h6>
         
-        //code to allow bot to know who has the most mines
-        var mostMines = enemyBots[0];
-        for(i = 0; i < enemyBots.length; i++){
-            if (mostMines.mineCount < enemyBots[i].mineCount){
-                var mostMines = enemyBots[i];
-            }
-        }
-       
-
-        /*                                      *
-         * This Code Decides WHAT to do         *
-         *                                      */
-        var task;
-        task = "freeMines";
-        //gives health to bot
-        if(bot.yourBot.life < 50 && bot.yourBot.gold > 1){
-            task = "bot.taverns";
-        }
-        //makes bot go for player with the most mines
-        else if(mostMines.mineCount > bot.yourBot.mineCount){
-            task = "mostMines";
-        }
-        //if yourBot has most mines it stays at the tavern and gets healed
-        else if(bot.yourBot.mineCount > enemyBots[0].mineCount && bot.yourBot.mineCount > enemyBots[1].mineCount && bot.yourBot.mineCount > enemyBots[2].mineCount){
-            task = "bot.taverns";
-        }
-        //makes bot go for all free mines
-        else{
-            task = "freeMines";
-        }
+        <h2>RAM</h2>
+        <div><img src="http://geek-easy.com/wp-content/uploads/2015/09/ram.jpg" width="45%"></div>
+        <h6>The RAM stands for Random Acess Memory Ram is the memory in the computor</h6>
         
+        <h2>Hard Drive</h2>"?
+        <div><img src="http://cdn.eteknix.com/wp-content/uploads/2012/04/hard-drive.jpg" width="45%">;</div>
+        <h6>The hard dribe is what keeps all of the data and memory.</h6>
         
-        /*                                      *
-         * This Code Determines HOW to do it    *
-         *                                      */
-
-        // This Code find the nearest freemine and sets myDir toward that direction //
-        if(task === "freeMines") {
-            var closestMine = bot.freeMines[0];
-            for(i = 0; i < bot.freeMines.length; i++) {
-                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
-                    closestMine = bot.freeMines[i];
-                }
-            }
-            console.log("Claiming a Free Mine!");
-            myDir = bot.findPath(myPos, closestMine);
-        }
-        
-        // this will determine which tavern is the closest
-        if(task === "bot.taverns"){
-            var closestTavern = bot.taverns[0];
-            for(i = 0; i < bot.taverns.length; i++) {
-                if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
-                    closestTavern = bot.taverns[i];
-                }
-            }
-            console.log("You Are Healed");
-            myDir = bot.findPath(myPos, closestTavern);
-        }
-        // this will determine which enemy is the closest   
-        if(task === "mostMines") {
-            console.log("Chasing player");
-            myDir = bot.findPath(myPos, mostMines.posArray);
-        } 
-           
-            
-        
-
-        /*                                                                                                                              *
-         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
-         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
-        if(myDir === "none") {
-            console.log("Going Random!");
-            var rand = Math.floor(Math.random() * 4);
-            var dirs = ["north", "south", "east", "west"];
-            bot.goDir = dirs[rand];
-        } else {
-            bot.goDir = myDir;
-        }
-
-
-
-        ///////////* DON'T REMOVE ANTYTHING BELOW THIS LINE *//////////////
-        resolve();
-    });
-}
-bot.runGame();
-</pre></code>
-        
-        <h2>The three things that my bot does is go for free mines, go for the player with the most mines, and 
-        if my bot has the most mines it stays at the tavern and continues to get life.</h2>
-        <code><pre>
-        else{
-            task = "freeMines";
-        }
-        -------------------------------------------------------
-        if(task === "freeMines") {
-            var closestMine = bot.freeMines[0];
-            for(i = 0; i < bot.freeMines.length; i++) {
-                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
-                    closestMine = bot.freeMines[i];
-                }
-            }
-            console.log("Claiming a Free Mine!");
-            myDir = bot.findPath(myPos, closestMine);
-        }
-        
-        </pre></code>
-        <h2>The code sabove work together to make the bot collect free mines the first psrt allows the system 
-        to know the taskthat it needs to do, and the second part makes the bot able to know where the free mines are </h2>
-        
-        <code><pre>
-        var mostMines = enemyBots[0];
-        for(i = 0; i < enemyBots.length; i++){
-            if (mostMines.mineCount < enemyBots[i].mineCount){
-                var mostMines = enemyBots[i];
-            }
-        }
-        ---------------------------------------------------------
-        else if(mostMines.mineCount > bot.yourBot.mineCount){
-            task = "mostMines";
-        ---------------------------------------------------------
-        if(task === "mostMines") {
-            console.log("Chasing player");
-            myDir = bot.findPath(myPos, mostMines.posArray);
-        }
-        </pre></code>
-        
-        <h2>The codes above allow the player to know who has the most mines. The first part allows my bot to 
-        know who are enemies, the secont part sets the bot to the tasc its given, and the last part tells the 
-        bot how to get to the player with the most mines and what to console log.</h2>
-        
-        <code><pre>
-        else if(bot.yourBot.mineCount > enemyBots[0].mineCount && bot.yourBot.mineCount > enemyBots[1].mineCount && bot.yourBot.mineCount > enemyBots[2].mineCount){
-            task = "bot.taverns";
-        -------------------------------------------------------------------------------------------------------------------------------------------------------------
-         if(task === "bot.taverns"){
-            var closestTavern = bot.taverns[0];
-            for(i = 0; i < bot.taverns.length; i++) {
-                if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
-                    closestTavern = bot.taverns[i];
-                }
-            }
-            console.log("You Are Healed");
-            myDir = bot.findPath(myPos, closestTavern);
-        }
-        
-        </pre></code>
-        
-        <h2>The code above allows the bot to know when to stay at the tavern and when to leave the tavern. The first part tells the bot when he has more mines than everyone else stay at the tavern and dont leave. the second part tells it what to console log and tells the bot how to get to the tavern.</h2>u
+        <h2>COMMUNICATION THROUGH COMPONENTS</h2>
+        <div><img src="http://maxpcinc.com/images/Networking1.JPG"></div>
+        <h6>Computorrs conmmunicate throuch the CPU and the cpu is the brain of the computer.</h6>
+       z 
+        <h2>KEYBORD, MOUSE, & MONITOR</h2>
+        <div><img src="http://previewcf.turbosquid.com/Preview/2014/05/26__19_47_07/keyboard_monitor_01.jpgdf0d2378-f891-4089-a1d9-0b59b7b3c030Larger.jpg"></div>
+        <h6>The keybord controlls all of the letters, the mouse controlls the cursor, and the motor is where all of the actions are projected.</h6>
     </body>
 </html>
